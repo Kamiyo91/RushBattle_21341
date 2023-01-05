@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnemyTeamStageManager_RushBattle_21341.cs" />
+    <Compile Include="EnemyTeamStageManager_RushBattleEndless_21341.cs" />
     <Compile Include="RushBattleModInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RushBattleModParameters.cs" />

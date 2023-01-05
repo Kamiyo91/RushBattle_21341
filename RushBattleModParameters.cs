@@ -15,55 +15,72 @@ namespace RushBattle_21341
         public static readonly RushBattlePhaseOptions Phase1 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.OldSamurai },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.SamuraiMapPlayer } } }, unitAllowed: 1,
+                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.SamuraiMapPlayer } } },
+            unitAllowed: 1,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase2 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Mio },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.MioMap } } }, unitAllowed: 3,
+                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.MioMap } } },
+            unitAllowed: 3,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase3 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Kamiyo },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.KamiyoMap1,KamiyoModParameters.KamiyoMap2 } } }, unitAllowed: 4,
+            {
+                {
+                    KamiyoModParameters.PackageId,
+                    new List<MapModel> { KamiyoModParameters.KamiyoMap1, KamiyoModParameters.KamiyoMap2 }
+                }
+            }, unitAllowed: 4,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase4 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Hayate },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.HayateMap } } }, unitAllowed: 1,
+                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.HayateMap } } },
+            unitAllowed: 1,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase5 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Wilton },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.WiltonMap } } }, unitAllowed: 2,
+                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.WiltonMap } } },
+            unitAllowed: 2,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase6 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Raziel },
             new Dictionary<string, List<MapModel>>
-                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.RazielMap } } }, unitAllowed: 4,
+                { { KamiyoModParameters.PackageId, new List<MapModel> { KamiyoModParameters.RazielMap } } },
+            unitAllowed: 4,
             cmhPackageId: KamiyoModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase7 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Sae, UnitModels.VortexGuard, UnitModels.VortexGuard },
             new Dictionary<string, List<MapModel>>
-                { { VortexModParameters.PackageId, new List<MapModel> { VortexModParameters.SaePhase1Map ,VortexModParameters.SaePhase2Map } } }, formationId: 41,unitAllowed:1,
+            {
+                {
+                    VortexModParameters.PackageId,
+                    new List<MapModel> { VortexModParameters.SaePhase1Map, VortexModParameters.SaePhase2Map }
+                }
+            }, formationId: 41, unitAllowed: 1,
             cmhPackageId: VortexModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase8 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Miyu, UnitModels.AztecPriest, UnitModels.AztecPriest },
             new Dictionary<string, List<MapModel>>
-                { { VortexModParameters.PackageId, new List<MapModel> { VortexModParameters.MiyuMap } } }, formationId: 41, unitAllowed: 2,
+                { { VortexModParameters.PackageId, new List<MapModel> { VortexModParameters.MiyuMap } } },
+            formationId: 41, unitAllowed: 2,
             cmhPackageId: VortexModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase9 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.GreenHunter },
             new Dictionary<string, List<MapModel>>
-                { { VortexModParameters.PackageId, new List<MapModel> { VortexModParameters.ZeroMap } } }, unitAllowed: 3,
+                { { VortexModParameters.PackageId, new List<MapModel> { VortexModParameters.ZeroMap } } },
+            unitAllowed: 3,
             cmhPackageId: VortexModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase10 = new RushBattlePhaseOptions(
@@ -99,7 +116,8 @@ namespace RushBattle_21341
         public static readonly RushBattlePhaseOptions Phase13 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.PurplePoison },
             new Dictionary<string, List<MapModel>>
-                { { PurpleModParameters.PackageId, new List<MapModel> { MapModels.PurplePoisonMap } } }, starterMapPhase:-1, unitAllowed: 3,
+                { { PurpleModParameters.PackageId, new List<MapModel> { MapModels.PurplePoisonMap } } },
+            starterMapPhase: -1, unitAllowed: 3,
             cmhPackageId: PurpleModParameters.PackageId);
 
         public static readonly RushBattlePhaseOptions Phase14 = new RushBattlePhaseOptions(
@@ -121,7 +139,8 @@ namespace RushBattle_21341
         public static readonly RushBattlePhaseOptions Phase15 = new RushBattlePhaseOptions(
             new List<UnitModel> { UnitModels.Mary },
             new Dictionary<string, List<MapModel>>
-                { { MaryModParameters.PackageId, new List<MapModel> { MaryModParameters.MaryMapModel } } }, unitAllowed: 3,
+                { { MaryModParameters.PackageId, new List<MapModel> { MaryModParameters.MaryMapModel } } },
+            unitAllowed: 3,
             cmhPackageId: MaryModParameters.PackageId);
     }
 

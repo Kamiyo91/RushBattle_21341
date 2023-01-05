@@ -3,7 +3,7 @@ using BigDLL4221.StageManagers;
 
 namespace RushBattle_21341
 {
-    public class EnemyTeamStageManager_RushBattle_21341 : EnemyTeamStageManager_RushBattleWithCMUOnly_DLL4221
+    public class EnemyTeamStageManager_RushBattleEndless_21341 : EnemyTeamStageManager_RushBattleWithCMUOnly_DLL4221
     {
         public override void OnWaveStart()
         {
@@ -24,7 +24,7 @@ namespace RushBattle_21341
                 RushBattleModParameters.Phase13,
                 RushBattleModParameters.Phase14,
                 RushBattleModParameters.Phase15
-            }, false, true);
+            }, true, true);
             base.OnWaveStart();
         }
     }
